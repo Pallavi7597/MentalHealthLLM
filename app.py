@@ -5,7 +5,7 @@ from langchain_groq import ChatGroq
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/api/*": {"origins": "*"}}) 
 
 os.environ["GROQ_API_KEY"] = "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"
 
